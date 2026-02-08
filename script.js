@@ -48,28 +48,28 @@ envelope.addEventListener("click", () => {
     
      yesScale += 1;
      switch (yesScale) {
-case yesScale=2:
+case 2:
     title.textContent = "jeje creo que le picaste mal";
 
     catImg.src = "cat_kitty.gif";
-  case yesScale=3:
+  case 3:
     title.textContent = "segura?!!";
 
     catImg.src = "cat_gun.gif";
-  case yesScale=4:
+  case 4:
     title.textContent = "es neta?!!";
 
     catImg.src = "cat_sad.gif";
-case yesScale=5:
+case 5:
     title.textContent = "andale, ya bien";
 
     catImg.src = "lloro.gif";
-case yesScale=6:
+case 6:
     title.textContent = "segura?!!";
 
     catImg.src = "cat_gun.gif";
   default:
-    statements
+    title.textContent = "wololo";
 }
 
      if (yesBtn.style.position !== "fixed") {
@@ -85,7 +85,7 @@ case yesScale=6:
 // YES is clicked
 
 yesBtn.addEventListener("click", () => {
-    title.textContent = "wuwuwuwu buen salto de fé!";
+    title.textContent = "wuwuwuwu buen salto de fe!";
 
     catImg.src = "milesleap.gif";
 
