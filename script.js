@@ -34,7 +34,7 @@ noBtn.addEventListener("click", () => {
 
     noBtn.style.transition = "transform 0.3s ease";
     noBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
-//});
+});
 
 // Logic to make YES btn to grow
 
