@@ -52,23 +52,23 @@ envelope.addEventListener("click", () => {
      case 2:
         title.textContent = "jeje creo que le picaste mal";
         catImg.src = "cat_kitty.gif";
-        break;
+        
     case 3:
         title.textContent = "segura?!!";
         catImg.src = "cat_gun.gif";
-        break;
+        
     case 4:
         title.textContent = "es neta?!!";
         catImg.src = "cat_sad.gif";
-        break;
+        
     case 5:
         title.textContent = "andale, ya bien";
         catImg.src = "lloro.gif";
-        break;
+        
     case 6:
         title.textContent = "segura?!!";
         catImg.src = "cat_gun.gif";
-        break;
+        
     default:
         title.textContent = "default";
 };
