@@ -8,7 +8,7 @@ const title = document.getElementById("letter-title");
 const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
-
+const contador = 0 
 // Click Envelope
 
 envelope.addEventListener("click", () => {
@@ -46,8 +46,9 @@ envelope.addEventListener("click", () => {
 
  noBtn.addEventListener("click", () => {
     
-     yesScale += 1;
-     switch (yesScale) {
+     yesScale += 0.5;
+     contador +=1
+     switch (contador) {
 case 2:
     title.textContent = "jeje creo que le picaste mal";
 
