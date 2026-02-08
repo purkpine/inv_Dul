@@ -47,7 +47,7 @@ envelope.addEventListener("click", () => {
  noBtn.addEventListener("click", () => {
     
      yesScale += 1;
-     switch (expre) {
+     switch (yesScale) {
 case yesScale=2:
     title.textContent = "jeje creo que le picaste mal";
 
