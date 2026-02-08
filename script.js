@@ -8,7 +8,7 @@ const title = document.getElementById("letter-title");
 const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
-const contador = 0
+const contador = 1;
 // Click Envelope
 
 envelope.addEventListener("click", () => {
@@ -39,7 +39,7 @@ noBtn.addEventListener("click", () => {
 // Logic to make YES btn to grow
 
  let yesScale = 1;
- Let contador =1;
+ 
  //yesBtn.style.position = "relative"
  //yesBtn.style.transformOrigin = "center center";
 // yesBtn.style.transition = "transform 0.3s ease";
