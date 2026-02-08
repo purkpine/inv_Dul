@@ -45,13 +45,37 @@ envelope.addEventListener("click", () => {
  yesBtn.style.transition = "transform 0.3s ease";
 
  noBtn.addEventListener("click", () => {
-    title.textContent = "segura?!";
-     yesScale += 2;
+    
+     yesScale += 1;
+     switch (expre) {
+case yesScale=2:
+    title.textContent = "jeje creo que le picaste mal";
+
+    catImg.src = "cat_kitty.gif";
+  case yesScale=3:
+    title.textContent = "segura?!!";
+
+    catImg.src = "cat_gun.gif";
+  case yesScale=4:
+    title.textContent = "es neta?!!";
+
+    catImg.src = "cat_sad.gif";
+case yesScale=5:
+    title.textContent = "andale, ya bien";
+
+    catImg.src = "lloro.gif";
+case yesScale=6:
+    title.textContent = "segura?!!";
+
+    catImg.src = "cat_gun.gif";
+  default:
+    statements
+}
 
      if (yesBtn.style.position !== "fixed") {
          yesBtn.style.position = "fixed";
-         yesBtn.style.top = "25%";
-         yesBtn.style.left = "25%";
+         yesBtn.style.top = "50%";
+         yesBtn.style.left = "50%";
          yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
      }else{
          yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
@@ -61,9 +85,9 @@ envelope.addEventListener("click", () => {
 // YES is clicked
 
 yesBtn.addEventListener("click", () => {
-    title.textContent = "Yippeeee!";
+    title.textContent = "wuwuwuwu buen salto de fé!";
 
-    catImg.src = "cat_dance.gif";
+    catImg.src = "milesleap.gif";
 
     document.querySelector(".letter-window").classList.add("final");
 
