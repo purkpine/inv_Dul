@@ -22,19 +22,19 @@ envelope.addEventListener("click", () => {
 
 // Logic to move the NO btn
 
-noBtn.addEventListener("mouseover", () => {
-   const min = 200;
-    const max = 200;
+//noBtn.addEventListener("mouseover", () => {
+//   const min = 200;
+//    const max = 200;
+//
+//    const distance = Math.random() * (max - min) + min;
+//    const angle = Math.random() * Math.PI * 2;
+//
+//    const moveX = Math.cos(angle) * distance;
+//    const moveY = Math.sin(angle) * distance;
 
-    const distance = Math.random() * (max - min) + min;
-    const angle = Math.random() * Math.PI * 2;
-
-    const moveX = Math.cos(angle) * distance;
-    const moveY = Math.sin(angle) * distance;
-
-    yesBtn.style.transition = "transform 0.3s ease";
-    yesBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
-});
+//    yesBtn.style.transition = "transform 0.3s ease";
+//    yesBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
+//});
 
 // Logic to make YES btn to grow
 
@@ -49,14 +49,14 @@ noBtn.addEventListener("mouseover", () => {
      yesScale += 0;
       contador +=1;
 
-     if (yesBtn.style.position !== "fixed") {
-         yesBtn.style.position = "fixed";
-         yesBtn.style.top = "25%";
-         yesBtn.style.left = "25%";
-         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-     }else{
-         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-     };
+     //if (yesBtn.style.position !== "fixed") {
+    //     yesBtn.style.position = "fixed";
+    //     yesBtn.style.top = "25%";
+    //     yesBtn.style.left = "25%";
+    //     yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+    // }else{
+    //     yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+    // };
  });
          switch (contador) {
       case 2:{
