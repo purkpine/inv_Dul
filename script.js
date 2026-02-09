@@ -40,9 +40,9 @@ envelope.addEventListener("click", () => {
 
  let yesScale = 1;
  
- yesBtn.style.position = "relative"
- yesBtn.style.transformOrigin = "center center";
- yesBtn.style.transition = "transform 0.3s ease";
+// yesBtn.style.position = "relative"
+// yesBtn.style.transformOrigin = "center center";
+// yesBtn.style.transition = "transform 0.3s ease";
 
  noBtn.addEventListener("click", () => {
  //         switch (contador) {
