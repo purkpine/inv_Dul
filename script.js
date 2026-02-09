@@ -38,8 +38,8 @@ envelope.addEventListener("click", () => {
     contador +=1;
 
     
-//document.querySelector(".letter-window").classList.add("medio")
-//medioText.style.display = "block";
+document.querySelector(".letter-window").classList.add("medio")
+medioText.style.display = "block";
          switch (contador) {
       case 2:{
          title.textContent = "jeje creo que le picaste mal";
@@ -68,7 +68,7 @@ envelope.addEventListener("click", () => {
           break;
    }
      case 7:{
-         title.textContent = "mmm deja te ayudo poquito2";
+         title.textContent = "mmm deja te ayudo poquito...";
          catImg.src = "cat_kitty.gif";
     //if (yesBtn.style.position !== "fixed") {
     //     yesBtn.style.position = "fixed";
