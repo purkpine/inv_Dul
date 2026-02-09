@@ -48,18 +48,7 @@ envelope.addEventListener("click", () => {
     
      yesScale += 1;
      contador +=1;
-     
-     if (yesBtn.style.position !== "fixed") {
-         yesBtn.style.position = "fixed";
-         yesBtn.style.top = "50%";
-         yesBtn.style.left = "50%";
-         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-     }else{
-         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-     };
- });
-
-switch (contador) {
+     switch (contador) {
      case 2:
         title.textContent = "jeje creo que le picaste mal";
         catImg.src = "cat_kitty.gif";
@@ -81,8 +70,19 @@ switch (contador) {
         catImg.src = "cat_gun.gif";
         
     default:
-        title.textContent = "default";
+        ;
 };
+     if (yesBtn.style.position !== "fixed") {
+         yesBtn.style.position = "fixed";
+         yesBtn.style.top = "50%";
+         yesBtn.style.left = "50%";
+         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+     }else{
+         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+     };
+ });
+
+
 // YES is clicked
 
 yesBtn.addEventListener("click", () => {
