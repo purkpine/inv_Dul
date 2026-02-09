@@ -70,7 +70,7 @@ envelope.addEventListener("click", () => {
      case 7:{
          title.textContent = "mmm deja te ayudo poquito2";
          catImg.src = "cat_kitty.gif";
-        //if (yesBtn.style.position !== "fixed") {
+    //if (yesBtn.style.position !== "fixed") {
     //     yesBtn.style.position = "fixed";
     //     yesBtn.style.top = "25%";
     //     yesBtn.style.left = "25%";
@@ -91,7 +91,7 @@ envelope.addEventListener("click", () => {
     noBtn.style.transition = "transform 0.3s ease";
     noBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
 }); break;
-   }
+   };
      default:
          ;
  }; });
