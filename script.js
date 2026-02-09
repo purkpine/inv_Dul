@@ -8,7 +8,7 @@ const title = document.getElementById("letter-title");
 const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
-const medio = document.getElementById("medio-text");
+const medioText = document.getElementById("medio-text");
 let contador = 1;
 // Click Envelope
 
@@ -36,10 +36,8 @@ envelope.addEventListener("click", () => {
  noBtn.addEventListener("click", () => {
     
     contador +=1;
-
-    
-document.querySelector(".letter-window").classList.add("medio");
-medioText.style.display = "block";
+    document.querySelector(".letter-window").classList.add("medio");
+    medioText.style.display = "block";
          switch (contador) {
       case 2:{
          title.textContent = "jeje creo que le picaste mal";
