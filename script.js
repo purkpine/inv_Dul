@@ -8,7 +8,7 @@ const title = document.getElementById("letter-title");
 const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
-let contador = 1;
+let contador = 2;
 // Click Envelope
 
 envelope.addEventListener("click", () => {
