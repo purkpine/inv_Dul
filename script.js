@@ -79,8 +79,8 @@ envelope.addEventListener("click", () => {
 
      if (yesBtn.style.position !== "fixed") {
          yesBtn.style.position = "fixed";
-         yesBtn.style.top = "50%";
-         yesBtn.style.left = "50%";
+         yesBtn.style.top = "25%";
+         yesBtn.style.left = "25%";
          yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
      }else{
          yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
