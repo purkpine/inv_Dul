@@ -70,14 +70,14 @@ medioText.style.display = "block";
      case 7:{
          title.textContent = "mmm deja te ayudo poquito2";
          catImg.src = "cat_kitty.gif";
-        if (yesBtn.style.position !== "fixed") {
-         yesBtn.style.position = "fixed";
-         yesBtn.style.top = "25%";
-         yesBtn.style.left = "25%";
-         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-     }else{
-         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-     };
+        //if (yesBtn.style.position !== "fixed") {
+    //     yesBtn.style.position = "fixed";
+    //     yesBtn.style.top = "25%";
+    //     yesBtn.style.left = "25%";
+    //     yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+    // }else{
+    //     yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+    // };
         noBtn.addEventListener("mouseover", () => {
    const min = 200;
     const max = 200;
