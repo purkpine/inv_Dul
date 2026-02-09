@@ -73,7 +73,7 @@ document.querySelector(".letter-window").classList.add("medio")
           break;
    }
      case 7:{
-         title.textContent = "mmm deja te ayudo poquito";
+         title.textContent = "mmm deja te ayudo poquito2";
          catImg.src = "cat_kitty.gif";
        
         noBtn.addEventListener("mouseover", () => {
