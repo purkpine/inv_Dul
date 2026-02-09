@@ -45,10 +45,11 @@ envelope.addEventListener("click", () => {
 // yesBtn.style.transition = "transform 0.3s ease";
 
  noBtn.addEventListener("click", () => {
+    yesScale += 0;
+    contador +=1;
+    title.textContent = "jeprueba2 e picaste mal";
 
-     yesScale += 0;
-      contador +=1;
-
+    catImg.src = "cat_sad.gif";
      //if (yesBtn.style.position !== "fixed") {
     //     yesBtn.style.position = "fixed";
     //     yesBtn.style.top = "25%";
