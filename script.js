@@ -40,15 +40,26 @@ envelope.addEventListener("click", () => {
 
  let yesScale = 1;
  
- //yesBtn.style.position = "relative"
- //yesBtn.style.transformOrigin = "center center";
- //yesBtn.style.transition = "transform 0.3s ease";
+ yesBtn.style.position = "relative"
+ yesBtn.style.transformOrigin = "center center";
+ yesBtn.style.transition = "transform 0.3s ease";
 
  noBtn.addEventListener("click", () => {
     
      yesScale += 1;
      contador +=1;
-     switch (contador) {
+     
+     if (yesBtn.style.position !== "fixed") {
+         yesBtn.style.position = "fixed";
+         yesBtn.style.top = "50%";
+         yesBtn.style.left = "50%";
+         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+     }else{
+         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+     };
+ });
+
+switch (contador) {
      case 2:
         title.textContent = "jeje creo que le picaste mal";
         catImg.src = "cat_kitty.gif";
@@ -71,19 +82,7 @@ envelope.addEventListener("click", () => {
         
     default:
         title.textContent = "default";
-}
-
-
-     if (yesBtn.style.position !== "fixed") {
-         yesBtn.style.position = "fixed";
-         yesBtn.style.top = "50%";
-         yesBtn.style.left = "50%";
-         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-     }else{
-         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-     }
- });
-
+};
 // YES is clicked
 
 yesBtn.addEventListener("click", () => {
