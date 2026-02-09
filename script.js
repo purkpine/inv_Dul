@@ -102,7 +102,7 @@ yesBtn.addEventListener("click", () => {
     catImg.src = "milesleap.gif";
 
     document.querySelector(".letter-window").classList.add("final");
-
+    medioText.style.display = "none";
     buttons.style.display = "none";
 
     finalText.style.display = "block";
