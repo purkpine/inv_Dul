@@ -69,7 +69,7 @@ medioText.style.display = "block";
           break;
    }
     case 6:{
-         title.textContent = "ayññ ya no ta siendo gracioso :c quieres salir conmigo en san valentin?";
+         title.textContent = "ayññ ya no ta siendo gracioso :c";
          catImg.src = "lloro.gif";
           break;
    }
