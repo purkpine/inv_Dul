@@ -46,7 +46,7 @@ envelope.addEventListener("click", () => {
 
  noBtn.addEventListener("click", () => {
     
-     //yesScale += 1;
+     yesScale += 1;
      contador +=1;
      switch (contador) {
      case 2:
@@ -71,7 +71,7 @@ envelope.addEventListener("click", () => {
         
     default:
         title.textContent = "default";
-};
+}
 
 
      if (yesBtn.style.position !== "fixed") {
