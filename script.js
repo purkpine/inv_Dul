@@ -8,6 +8,7 @@ const title = document.getElementById("letter-title");
 const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
+const medio = document.getElementById("medio-text");
 let contador = 1;
 // Click Envelope
 
@@ -44,7 +45,7 @@ envelope.addEventListener("click", () => {
     // }else{
     //     yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
     // };
-
+document.querySelector(".letter-window").classList.add("medio")
          switch (contador) {
       case 2:{
          title.textContent = "jeje creo que le picaste mal";
@@ -52,26 +53,29 @@ envelope.addEventListener("click", () => {
           break;
    }
      case 3:{
-         title.textContent = "segura?!!";
+         title.textContent = "jeje preciosa, andas distraida vd? ";
          catImg.src = "cat_gun.gif";
           break;
    }
      case 4:{
-         title.textContent = "es neta?!!";
+         title.textContent = "estas segura?!";
          catImg.src = "cat_sad.gif";
           break;
    }
      case 5:{
          title.textContent = "andale, ya bien";
+         catImg.src = "andele.png";
+          break;
+   }
+    case 6:{
+         title.textContent = "ayññ ya no ta siendo gracioso :c quieres salir conmigo en san valentin?";
          catImg.src = "lloro.gif";
           break;
    }
-     case 6:{
-         title.textContent = "jeje deja te ayudo poquito";
-         catImg.src = "cat_kitty.gif";
-          break;
-   }
      case 7:{
+         title.textContent = "mmm deja te ayudo poquito";
+         catImg.src = "cat_kitty.gif";
+       
         noBtn.addEventListener("mouseover", () => {
    const min = 200;
     const max = 200;

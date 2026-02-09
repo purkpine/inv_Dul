@@ -137,3 +137,12 @@ display: inline-block;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
 }
+.medio-text{
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255,240,240,0.5);
+    border-radius: 12px;
+}
