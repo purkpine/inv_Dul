@@ -22,19 +22,7 @@ envelope.addEventListener("click", () => {
 
 // Logic to move the NO btn
 
-//noBtn.addEventListener("mouseover", () => {
-//   const min = 200;
-//    const max = 200;
-//
-//    const distance = Math.random() * (max - min) + min;
-//    const angle = Math.random() * Math.PI * 2;
-//
-//    const moveX = Math.cos(angle) * distance;
-//    const moveY = Math.sin(angle) * distance;
 
-//    yesBtn.style.transition = "transform 0.3s ease";
-//    yesBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
-//});
 
 // Logic to make YES btn to grow
 
@@ -47,7 +35,7 @@ envelope.addEventListener("click", () => {
  noBtn.addEventListener("click", () => {
     yesScale += 0;
     contador +=1;
-   
+
      //if (yesBtn.style.position !== "fixed") {
     //     yesBtn.style.position = "fixed";
     //     yesBtn.style.top = "25%";
@@ -79,9 +67,24 @@ envelope.addEventListener("click", () => {
           break;
    }
      case 6:{
-         title.textContent = "segura?!!";
-         catImg.src = "cat_gun.gif";
+         title.textContent = "jeje deja te ayudo poquito";
+         catImg.src = "cat_kitty.gif";
           break;
+   }
+     case 7:{
+        noBtn.addEventListener("mouseover", () => {
+   const min = 200;
+    const max = 200;
+
+    const distance = Math.random() * (max - min) + min;
+    const angle = Math.random() * Math.PI * 2;
+
+    const moveX = Math.cos(angle) * distance;
+    const moveY = Math.sin(angle) * distance;
+
+    noBtn.style.transition = "transform 0.3s ease";
+    noBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
+}); break;
    }
      default:
          ;
