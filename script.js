@@ -34,17 +34,10 @@ envelope.addEventListener("click", () => {
 // yesBtn.style.transition = "transform 0.3s ease";
 
  noBtn.addEventListener("click", () => {
-    yesScale += 0;
+    
     contador +=1;
 
-     //if (yesBtn.style.position !== "fixed") {
-    //     yesBtn.style.position = "fixed";
-    //     yesBtn.style.top = "25%";
-    //     yesBtn.style.left = "25%";
-    //     yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-    // }else{
-    //     yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-    // };
+    
 document.querySelector(".letter-window").classList.add("medio")
 medioText.style.display = "block";
          switch (contador) {
@@ -71,12 +64,20 @@ medioText.style.display = "block";
     case 6:{
          title.textContent = "ayññ ya no ta siendo gracioso :c";
          catImg.src = "lloro.gif";
+         yesScale += 2;
           break;
    }
      case 7:{
          title.textContent = "mmm deja te ayudo poquito2";
          catImg.src = "cat_kitty.gif";
-       
+        if (yesBtn.style.position !== "fixed") {
+         yesBtn.style.position = "fixed";
+         yesBtn.style.top = "25%";
+         yesBtn.style.left = "25%";
+         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+     }else{
+         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+     };
         noBtn.addEventListener("mouseover", () => {
    const min = 200;
     const max = 200;
