@@ -22,19 +22,19 @@ envelope.addEventListener("click", () => {
 
 // Logic to move the NO btn
 
-//noBtn.addEventListener("click", () => {
-//   const min = 200;
-//    const max = 200;
-//
-//    const distance = Math.random() * (max - min) + min;
-//    const angle = Math.random() * Math.PI * 2;
-//
-//    const moveX = Math.cos(angle) * distance;
-//    const moveY = Math.sin(angle) * distance;
+noBtn.addEventListener("mouseover", () => {
+   const min = 200;
+    const max = 200;
 
-//    noBtn.style.transition = "transform 0.3s ease";
-//    noBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
-//});
+    const distance = Math.random() * (max - min) + min;
+    const angle = Math.random() * Math.PI * 2;
+
+    const moveX = Math.cos(angle) * distance;
+    const moveY = Math.sin(angle) * distance;
+
+    yesBtn.style.transition = "transform 0.3s ease";
+    yesBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
+});
 
 // Logic to make YES btn to grow
 
@@ -45,37 +45,9 @@ envelope.addEventListener("click", () => {
 // yesBtn.style.transition = "transform 0.3s ease";
 
  noBtn.addEventListener("click", () => {
- //         switch (contador) {
- //     case 2:{
- //        title.textContent = "jeje creo que le picaste mal";
- //        catImg.src = "cat_kitty.gif";
- //         break;
- //  }
- //    case 3:{
- //        title.textContent = "segura?!!";
-    //     catImg.src = "cat_gun.gif";
-       //   break;
-//   }
-   //  case 4:{
-      //   title.textContent = "es neta?!!";
-//         catImg.src = "cat_sad.gif";
-//          break;
-//   }
-//     case 5:{
-//         title.textContent = "andale, ya bien";
- //        catImg.src = "lloro.gif";
-//          break;
-//   }
-//     case 6:{
-//         title.textContent = "segura?!!";
- //        catImg.src = "cat_gun.gif";
- //         break;
- //  }
- //    default:
- //        ;
-// };
+
      yesScale += 0;
-//      contador +=1;
+      contador +=1;
 
      if (yesBtn.style.position !== "fixed") {
          yesBtn.style.position = "fixed";
@@ -86,7 +58,35 @@ envelope.addEventListener("click", () => {
          yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
      };
  });
-
+         switch (contador) {
+      case 2:{
+         title.textContent = "jeje creo que le picaste mal";
+         catImg.src = "cat_kitty.gif";
+          break;
+   }
+     case 3:{
+         title.textContent = "segura?!!";
+         catImg.src = "cat_gun.gif";
+          break;
+   }
+     case 4:{
+         title.textContent = "es neta?!!";
+         catImg.src = "cat_sad.gif";
+          break;
+   }
+     case 5:{
+         title.textContent = "andale, ya bien";
+         catImg.src = "lloro.gif";
+          break;
+   }
+     case 6:{
+         title.textContent = "segura?!!";
+         catImg.src = "cat_gun.gif";
+          break;
+   }
+     default:
+         ;
+ };
 
 // YES is clicked
 
