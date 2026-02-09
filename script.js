@@ -46,6 +46,7 @@ envelope.addEventListener("click", () => {
     //     yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
     // };
 document.querySelector(".letter-window").classList.add("medio")
+medioText.style.display = "block";
          switch (contador) {
       case 2:{
          title.textContent = "jeje creo que le picaste mal";
