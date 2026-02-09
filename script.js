@@ -36,7 +36,7 @@ envelope.addEventListener("click", () => {
  noBtn.addEventListener("click", () => {
     
     contador +=1;
-    document.querySelector(".letter-window").classList.add("medio");
+    document.querySelector(".letter-window").classList.add("medio-text");
     medioText.style.display = "block";
          switch (contador) {
       case 2:{
