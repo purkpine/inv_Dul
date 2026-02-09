@@ -74,7 +74,7 @@ envelope.addEventListener("click", () => {
  //    default:
  //        ;
 // };
-     yesScale += 1;
+     yesScale += 0.5;
 //      contador +=1;
 
      if (yesBtn.style.position !== "fixed") {
